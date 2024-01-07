@@ -1,0 +1,100 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,option,blockquote,th,td,input,select,button,figure,section,article,main,aside,nav,header,footer,figcaption{margin:0;padding:0}
+fieldset,img{border:0 none}
+img {vertical-align:top}
+dl,ul,ol,menu,li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle}
+input::-ms-clear{display:none}
+button{border:0 none;background-color:transparent;cursor:pointer}
+body,th,td,input,select,textarea,button{font-size:12px;line-height:1;font-family:'Gowun Batang', serif; color:#333}
+a{color:#333;text-decoration:none}
+a:active,a:hover,a:visted{text-decoration:none}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+main{display:block}
+html, body{height:100%;}
+
+.inp_txt{position:relative; display:block; border:1px solid #ddd; background-color:#fff;}
+.inp_txt:after{display:block; content:''; clear:both;}
+.inp_txt .inp{padding-right:5px; box-sizing:border-box;}
+.inp_txt > span{position:absolute; top:0; right:5px;}
+.inp_txt .inp.nppfs-npk{padding-right:20px;}
+.inp_txt .ui_placeholder{right:auto; left:5px; line-height:19px; color:#a9a9a9;}
+
+input[type="radio"], input[type="checkbox"]{width:13px; height:13px;}
+input[type="submit"], input[type="reset"]{border:none;}
+input[type="text"], input[type="password"], .upload_name{background:#fff; width:100%; height:18px; line-height:19px; border:0; color:#444; text-indent:5px; vertical-align:middle;}
+[disabled], input[disabled], input[readonly], select[disabled], select[readonly], textarea[disabled], textarea[readonly]{background:#f0f0f0; color:#333;}
+.inp_txt.disabled, .selects.disabled, .inp_txt.readonly, .selects.readonly{background-color:#f0f0f0;}
+
+textarea {background:#fff; width:100%; height:100px; padding:4px 0 1px 0; color:#454545; vertical-align:middle; border:1px solid #ddd;}
+select {background-color:#fff; border:1px solid transparent; height:28px; padding:2px 0 2px 0; vertical-align:middle; color:#666;}
+
+
+#Index {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0} /* 바로가기 사용 */
+.ir {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:100%;white-space:nowrap;}
+thead.ir, .btn .txt.ir{position:absolute; left:-9999px;}
+/* .ir_wa {display:block;overflow:hidden;position:relative;z-index:-10;width:100%;height:100%}  */
+legend, caption, .screen_out{overflow:hidden;/* position:absolute; */width:0;height:0;line-height:0;text-indent:-9999px;}
+
+.fl {float:left}
+.fr {float:right}
+.fix{display:block;overflow:visible;width:auto;clear:both;*zoom:1}
+.fix:after {display:block;visibility:hidden;height:0;font-size:0;clear:both;content:''}
+.clear {width:0;height:0;font-size:0;line-height:0;clear:both}
+
+.show {display:block}
+.hide {display:none}
+
+
+table {width:100%; /* border-collapse:collapse; 개발 : 그리드때문에 주석처리 */border-spacing:0; border:0;} /* 테이블 */
+
+/* ALIGN */
+.ac {text-align:center !important;}
+.al {text-align:left !important;}
+.ar {text-align:right !important;}
+.aj {text-align:justify !important;}
+.vt {vertical-align:top !important;}
+.vm {vertical-align:middle !important;}
+.vb {vertical-align:bottom !important;}
+
+/* DISPLAY */
+.inline{display:inline !important;;}
+.inline_b{display:inline-block !important;;}
+.block{display:block !important;;}
+.table_ds {display:table; width:100%;}
+.table_ds2 {display:table}
+.table_ds .row{display:table-row;}
+.table_ds .cell {display:table-cell; padding-left:6px; vertical-align:middle;}
+.table_ds2 .cell {display:table-cell; padding-left:6px; vertical-align:middle;}
+.table_ds .cell.hour{display:table-cell; padding-left:1px; vertical-align:middle;}
+.table_ds .cell:first-child{padding-left:0;}
+#content .table_ds .cell.auto{width:auto; white-space:nowrap;}
+
+/* .table th, .table td{border-left:1px solid #ddd;}
+ */
+/* WIDTH */
+.wid5{width:5% !important;}
+.wid10{width:10% !important;}
+.wid15{width:15% !important;}
+.wid20{width:20% !important;}
+.wid25{width:25% !important;}
+.wid30{width:30% !important;}
+.wid35{width:35% !important;}
+.wid40{width:40% !important;}
+.wid50{width:50% !important;}
+.wid60{width:60% !important;}
+.wid70{width:70% !important;}
+.wid75{width:75% !important;}
+.wid80{width:80% !important;}
+.wid85{width:85% !important;}    
+.wid90{width:90% !important;}    
+.wid100{width:100% !important;}
+
+
+/* Etc. */
+th, td {word-wrap:break-word;word-break:break-all;}
+* {-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;user-drag:none;-webkit-touch-callout:none;}
+
+.selects_2 select {width:100%; border:1px solid #ddd; height:20px; padding-left:6px; color:#333; text-align:left;}

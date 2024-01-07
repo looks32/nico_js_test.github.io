@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+body {
+	background: url(../img/1.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.center_area {
+	position: absolute;
+	left:50%;
+	top:50%;
+	z-index: 10;
+	transform: translate(-50%, -50%); 
+}
+
+.center_area .clock_wrap {
+	text-align: center;
+}
+
+.center_area .clock_wrap .clock {
+	line-height: 1.5;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+}
+
+
+.center_area .greeting {
+	line-height: 1.5;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+}
+
+
+
+.login_wrap {
+	position: fixed; 
+	left: 50%; 
+	top: 50%; 
+	z-index: 10; 
+	transform: translate(-50%, -50%); 
+	transition: opacity 0.5s;
+}
+
+.login_wrap > p {
+	color: #fff; 
+	font-size: 34px; 
+	text-align: center;
+}
+
+.login_form .login_input {
+	height: auto; 
+	text-align: center; 
+	font-size: 50px; 
+	color: #fff; 
+	outline: none; 
+	border-bottom: 1px solid #fff; 
+	background-color: transparent;
+}
+
+.login_form .login_input::placeholder {
+	color: #fff;
+}
+.login_form .login_submit {
+	opacity: 0;
+}
+
+.main_cont {
+	transition:opacity 0.5s;
+}
+
+.quotes_wrap {
+	position: fixed;
+	left: 0;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+
+.quotes_wrap p:last-child {
+	margin-top: 10px;
+}
+
+.weather_wrap {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	text-align: right;
+}
+
+.weather_wrap p {
+	color: #fff;
+	font-size: 20px;
+}
+.weather_wrap p ~ p {
+	margin-top: 10px;
+}
+
+.todo_wrap {
+	position: fixed;
+	left: 10px;
+	top: 10px;
+	padding: 10px;
+	border-radius: 6px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.todo_wrap h2 {
+	color:#fff;
+}
+
+.todo_form {
+	margin-top: 10px;
+}
+
+.todo_form > input[type="text"] {
+	margin-top: 10px;
+	color: #fff;
+	font-size: 18px;
+	outline: none;
+	border-bottom: 1px solid #fff;
+	background-color: transparent;
+}
+
+.todo_list {
+	margin-top:	10px;
+}
+
+.todo_list li {
+	position: relative;
+	padding-left: 10px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.todo_list li:before {
+	content: '-';
+	display: block;
+	position: absolute;
+	left:0;
+	top:0;
+	color: #fff;
+	font-size: 18px;
+}
+
+.todo_list li ~ li {
+	margin-top: 10px;
+}
+
+.todo_list .not {
+	padding-left: 0;
+}
+
+.todo_list .not::before{
+	content: '';
+}
+
+.todo_list li span {
+	display: inline-block;
+	width: 160px;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	white-space: nowrap;
+
+}
+
+.todo_list li button {
+	display: inline-block;
+	position: relative;
+	top: -3px;
+	width: 14px;
+	height: 16px;
+	margin-left: 8px;
+	background:url(../img/del.svg) no-repeat center center;
+	background-size:100%;
+}
